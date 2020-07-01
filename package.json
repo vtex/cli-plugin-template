@@ -11,20 +11,22 @@
   "devDependencies": {
     "@oclif/dev-cli": "^1",
     "@oclif/plugin-help": "^3",
+    "@types/graphql": "^14.5.0",
     "@types/jest": "^26.0.3",
     "@types/node": "^14.0.14",
-    "eslint-config-oclif-typescript": "^0.1",
-    "eslint-config-oclif": "^3.1",
-    "eslint-config-vtex": "^12.3.0",
     "eslint": "^6.8.0",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "eslint-config-vtex": "^12.3.0",
     "globby": "^10",
     "jest": "^25.1.0",
-    "nodemon-notifier-cli": "https://github.com/Slessi/nodemon-notifier-cli.git",
     "nodemon": "^2.0.2",
+    "nodemon-notifier-cli": "https://github.com/Slessi/nodemon-notifier-cli.git",
     "prettier": "^2.0.1",
     "ts-jest": "^25.2.1",
     "ts-node": "^8",
-    "typescript": "^3.8.2"
+    "typescript": "^3.8.2",
+    "vtex": "^2.103.1-beta"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -51,7 +53,7 @@
   "scripts": {
     "build-clean": "rm -rf build",
     "build-incremental": "tsc --incremental",
-    "build": "yarn build-clean && tsc",
+    "build": "yarn build-clean && yarn tsc && OCLIF_COMPILATION=true yarn oclif-dev manifest",
     "ci:prettier-check": "prettier --check --config ./.prettierrc \"./src/**/*.{ts,tsx,js,jsx,json}\"",
     "ci:test": "yarn test --ci",
     "format-lint": "yarn format && yarn lint",
