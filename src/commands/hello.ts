@@ -1,4 +1,5 @@
 import { Command, flags } from '@oclif/command'
+import { CustomCommand } from 'vtex'
 
 export default class Hello extends Command {
   static description = 'describe the command here'
@@ -10,6 +11,7 @@ hello world from ./src/hello.ts!
   ]
 
   static flags = {
+    ...CustomCommand.globalFlags,
     help: flags.help({ char: 'h' }),
     // flag with a value (-n, --name=VALUE)
     name: flags.string({ char: 'n', description: 'name to print' }),
