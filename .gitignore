@@ -1,0 +1,12 @@
+.DS_Store
+.eslintcache
+.vscode
+*-debug.log
+*-error.log
+/.nyc_output
+/build
+/dist
+/tmp
+coverage
+node_modules
+package-lock.json
