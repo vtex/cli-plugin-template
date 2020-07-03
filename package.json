@@ -1,5 +1,5 @@
 {
-  "name": "cli-plugin-template",
+  "name": "@vtex/cli-plugin-template",
   "description": "vtex plugin template",
   "version": "0.0.0",
   "bugs": "https://github.com/vtex/cli-plugin-template/issues",

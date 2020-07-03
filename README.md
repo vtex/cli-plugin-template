@@ -15,11 +15,11 @@ vtex plugin template
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g cli-plugin-template
+$ npm install -g @vtex/cli-plugin-template
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-cli-plugin-template/0.0.0 linux-x64 node-v14.0.0
+@vtex/cli-plugin-template/0.0.0 linux-x64 node-v14.0.0
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -42,6 +42,8 @@ OPTIONS
   -f, --force
   -h, --help       show CLI help
   -n, --name=name  name to print
+  -v, --verbose    Show debug level logs
+  --trace          Ensure all requests to VTEX IO are traced
 
 EXAMPLE
   $ oclif-example hello
