@@ -5,8 +5,12 @@
     "importHelpers": true,
     "lib": ["es2018"],
     "module": "commonjs",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "outDir": "build",
     "rootDir": "src",
+    "skipLibCheck": true,
     "strict": true,
     "target": "es2018",
     "types": ["node", "jest"]
