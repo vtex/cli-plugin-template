@@ -26,6 +26,10 @@
     "typescript": "^3.8.2",
     "vtex": "^2.103.1-beta"
   },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/vtex/cli-plugin-template/blob/basic-template/LICENSE"
+  }],
   "engines": {
     "node": ">=8.0.0"
   },
