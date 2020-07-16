@@ -4,8 +4,7 @@ cli-plugin-template
 vtex plugin template
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/cli-plugin-template.svg)](https://npmjs.org/package/cli-plugin-template)
-[![Downloads/week](https://img.shields.io/npm/dw/cli-plugin-template.svg)](https://npmjs.org/package/cli-plugin-template)
+![npm](https://img.shields.io/npm/v/@vtex/cli-plugin-template)
 
 <!-- toc -->
 * [Usage](#usage)
