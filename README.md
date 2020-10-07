@@ -26,27 +26,27 @@ For more information, read [Ocliff Docs](https://oclif.io/docs/introduction).
 <!-- usage -->
 ```sh-session
 $ npm install -g @vtex/cli-plugin-template
-$ oclif-example COMMAND
+$ vtex COMMAND
 running command...
-$ oclif-example (-v|--version|version)
-@vtex/cli-plugin-template/0.0.0 linux-x64 node-v12.18.3
-$ oclif-example --help [COMMAND]
+$ vtex (-v|--version|version)
+@vtex/cli-plugin-template/0.0.0 linux-x64 node-v12.18.4
+$ vtex --help [COMMAND]
 USAGE
-  $ oclif-example COMMAND
+  $ vtex COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
+* [`vtex hello [FILE]`](#vtex-hello-file)
 
-## `oclif-example hello [FILE]`
+## `vtex hello [FILE]`
 
 describe the command here
 
 ```
 USAGE
-  $ oclif-example hello [FILE]
+  $ vtex hello [FILE]
 
 OPTIONS
   -f, --force
