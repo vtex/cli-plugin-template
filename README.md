@@ -8,7 +8,7 @@ Extend the `vtex` toolbelt!
 2. Clone/Create a plugin with this template.
 3. Change the template name under this project's `package.json`.
 2. Run `yarn link` on this project.
-3. Now run `vtex link @vtex/cli-plugin-template` (or the new name) on the `vtex/toolbelt` project.
+3. Now run `yarn link @vtex/cli-plugin-template` (or the new name) on the `vtex/toolbelt` project.
 4. Run `yarn watch` on the `vtex/toolbelt`
 5. Test the command on a VTEX IO app with `vtex-test hello`
 
@@ -60,5 +60,5 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
+_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/master/src/commands/hello.ts)_
 <!-- commandsstop -->
