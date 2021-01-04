@@ -124,7 +124,7 @@ USAGE
 <!-- commands -->
 * [`vtex hello [FILE]`](#vtex-hello-file)
 
-### `vtex hello [FILE]`
+## `vtex hello [FILE]`
 
 describe the command here
 
