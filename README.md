@@ -35,7 +35,7 @@ To use the `yarn watch` command, you must add `$HOME/.vtex/dev/bin` to your `PAT
 1. Open the `~/.bashrc` file (or the corresponding shell configuration file).
 2. At the end of this file, add the line: `export PATH=$PATH:$HOME/.vtex/dev/bin`.
 3. Save it.
-4. Run the command source `~/.bashrc` (or corresponding file).
+4. Run the command `source ~/.bashrc` (or corresponding file).
 
 ## Creating a new plugin
 
