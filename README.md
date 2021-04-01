@@ -63,8 +63,8 @@ Also, if necessary, feel free to create libraries, clients, and [modules](https:
 ### Step 3: Testing your plugin
 
 1. Run `yarn link` in your plugin project.
-2. Now, in the **cloned** Toolbelt directory, run `vtex link @vtex/cli-plugin-{name}`.
-3. Run `yarn watch` in both the cloned `vtex/toolbelt` and in the plugin directory. 
+2. Now, in the **cloned** Toolbelt directory, run `yarn link @vtex/cli-plugin-{name}`.
+3. Run `yarn watch` in both the cloned `vtex/toolbelt` and in the `plugin repo`. 
 
 A symlink named `vtex-test` will be created and you'll be able to locally test your plugin as you develop it. That means, for example, that you can test your plugin commands on any VTEX IO app by locally running `vtex-test {command-name}`.
 
@@ -73,7 +73,7 @@ A symlink named `vtex-test` will be created and you'll be able to locally test y
 If you're satisfied with the tests performed and the developed plugin:
 
 1. Access your profile on [npm](https://www.npmjs.com/). As a part of the `vtex` organization, you'll have access to [generate a new **publish** token.](https://docs.npmjs.com/creating-and-viewing-access-tokens)
-2. Save the generated token.
+2. Copy the generated token.
 3. Open your plugin repository on GitHub.
 4. Go to *Settings > Secrets* and [create a new repository secret](https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) with the name `NPM_TOKEN` and paste the value of the previously generated token.
 
@@ -100,7 +100,7 @@ The [Toolbelt](https://github.com/vtex/toolbelt) project adheres to a strict pul
 
 To request including your plugin in the Toolbelt, update the [Toolbelt `dependencies`](https://github.com/vtex/toolbelt/blob/master/package.json#L52) and the [`CHANGELOG.md`](https://github.com/vtex/toolbelt/blob/master/CHANGELOG.md) file. Open a pull request, explaining what your plugin does, wait for comments from reviewers, discuss and fix any related issues. Once you receive an LGTM, you'll be able to merge it to the master branch.
 
->⚠️ ***Keep in mind:** If your plugin is not accepted in the [Toolbelt](https://github.com/vtex/toolbelt) project, you can still use it **locally**. For that, you must run `yarn add {path}` in the **cloned** Toolbelt folder, where `{path}` must be replaced with the [npm](https://www.npmjs.com/) or relative path of your plugin. In these cases, however, VTEX does not support, neither takes any responsibility for any damages caused by the developed plugin.*
+>⚠️ ***Keep in mind:** If your plugin is not accepted in the [Toolbelt](https://github.com/vtex/toolbelt) project, you can still use it **locally**. For that, you need to go inside de cloned toolbelt repo and fire the command `yarn add PLUGIN_NAME`, then add plugin name in `package.json` in `oclif:plugins` section - [example](https://github.com/vtex/toolbelt/blob/2e8924bddb95d7f308d448584ac63ec8b121f877/package.json#L170) -. Run `yarn watch` and use `vtex-test` to use it. In these cases, however, VTEX does not support, neither takes any responsibility for any damages caused by the developed plugin.*
 
 # README.md plugin template
 
