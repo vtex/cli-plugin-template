@@ -62,6 +62,19 @@ Also, if necessary, feel free to create libraries, clients, and [modules](https:
 
 ### Step 3: Testing your plugin
 
+#### Testing your plugin alone
+At project root, run: `./bin/run`
+
+#### Linking and testing with Toolbelt
+
+Before the steps to link, you need to ensure that your plugin already is in the two places on the Toolbelt package.json: The "dependencies" and "plugins". If aren't, run:
+
+`yarn add ./{path-do-plugin}/cli-plugin-{name}`
+
+And manually add your plugin to "plugins" at toolbelt/package.json.
+
+Now, let's link:
+
 1. Run `yarn link` in your plugin project.
 2. Now, in the **cloned** Toolbelt directory, run `yarn link @vtex/cli-plugin-{name}`.
 3. Run `yarn watch` in both the cloned `vtex/toolbelt` and in the `plugin repo`. 
@@ -113,7 +126,7 @@ $ npm install -g @vtex/cli-plugin-template
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-template/0.0.0 linux-x64 node-v12.21.0
+@vtex/cli-plugin-template/0.0.0 linux-x64 node-v12.22.7
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
