@@ -1,5 +1,5 @@
 - name: cli-plugin-template
-  referenceId: PLACEHOLDER
+  referenceId: 6BHRDLLD
   build:
     provider: dkcicd
     pipelines:
